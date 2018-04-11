@@ -1,0 +1,7 @@
+CXX=g++
+
+OS=$(shell uname)
+
+ifeq ($(OS),Darwin) # Mac
+	CXX=g++-5
+endif

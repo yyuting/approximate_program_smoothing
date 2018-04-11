@@ -18,6 +18,46 @@ Then try running one of the shaders, e.g.
 
     $ cd proj/apps
     $ python render_circles.py
+    
+# Usage
+
+Example of tuning a shader:
+
+    python tune_shader.py full out_dir shader geometry parallax_mapping
+    
+Our test suite provides 7 shaders:
+
+    render_bricks
+    render_checkerboard
+    render_circles
+    render_color_circles
+    render_fire
+    render_sin_quadratic
+    render_zigzag
+    
+And 3 geometries:
+
+    plane
+    sphere
+    hyperboloid1
+    
+With 3 parallax mappings:
+
+    none
+    ripples
+    spheres
+    
+Please download our example tuning outputs from [here](http://www.cs.virginia.edu/~yy2bb/docs/tuner_result.zip). The rendering outputs are saved to html files in each subdirectory.
+
+To re-render outputs from tuning outputs, run:
+
+    python tune_shader.py render out_dir shader geometry parallax_mapping
+    
+# Citation
+
+If you find this useful, please cite our paper:
+
+Yuting Yang, Connelly Barnes. Approximate Program Smoothing Using Mean-Variance Statistics, with Application to Procedural Shader Bandlimiting. Eurographics 2018.
 
 # License
 
